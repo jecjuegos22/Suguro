@@ -1,0 +1,102 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* PERSONAL CODE ADJUSTED */
+
+/* .site-header {
+    background-color: #024950;
+    height: auto;
+    font-size: 22px;
+    flex: auto;
+
+}
+
+.head-container {
+    border-radius: 0px;
+    border-color: rgb(0, 0, 145);
+} */
+
+/* .site-footer {
+    font-size: 16px;
+    background-color: #0fa4af;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+
+}
+
+body {
+    background-color: #afdde5;
+    width: 100%;
+    margin: 0
+} 
+.components-footer {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}*/
+.page-container {
+    display: flex;
+  }
+  
+  .section-code {
+    display: flex;
+    /* Styles for your section code */
+  }
+  
+  .left-container {
+    display: flex;
+    /* Styles for your left container */
+  }
