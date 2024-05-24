@@ -1,0 +1,51 @@
+/* CSS for services section */
+
+
+.sow-features-feature {
+    margin-bottom: 50px;
+}
+
+.sow-features-feature h5 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.sow-features-feature p {
+    font-size: 16px;
+}
+
+/* Add drop shadow to .sow-features-feature */
+.sow-features-feature {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    background-color: #fff;
+}
+
+/*----------------------------------------------*/
+
+#services {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.grid-container-wrap {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.header-h1 {
+    font-size: 37.4px;
+}
+
+.header-h1 font {
+    font-size: 37.4px;
+    vertical-align: inherit;
+}
+
+.header-p font {
+    vertical-align: inherit;
+}
