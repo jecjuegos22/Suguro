@@ -2,106 +2,116 @@
 <html lang="ja" title="">
 
 <head>
-    <title>Suguro Tech Solutions Inc.</title>
+    <title>すぐろ技術ソリューション ー SUGURO TECH</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <div>
+        <!-- HEADER -->
+        <header>
+            <div class="header-div-container">
+                <section>
+                    <div class="img-container">
+                        <img class="section-img-container" src="JA.png" alt="Image" title="Japan">
+                    </div>
+                </section>
 
-    <!-- HEADER -->
-    <header>
-        <div class="header-div-container">
-            <section>
-                <div class="img-container">
-                    <img class="section-img-container" src="JA.png" alt="Image" title="Japan">
+                <section class="div-section">
+                    <a class="header-logo-above" href="#" ref="home.html" title="Suguro Tech Solutions Inc.">スグロ</a>
+                    <a class="header-logo-below" href="#" ref="home.html" title="Suguro Tech Solutions Inc.">技術ソリューション</a>
+                </section>
+
+                <section>
+                    <div class="img-container">
+                        <img class="section-img-container" src="PH.png" alt="Image" title="Philippines">
+                    </div>
+                </section>
+
+            </div>
+        </header>
+
+        <!-- NAV BAR -->
+        <nav class="second-nav">
+            <ul>
+                <div>
+                    <li><a href="#" title="Home">ホーム</a></li>
+                    <li><a href="#" title="About">アバウト</a></li>
+                    <li><a href="#" title="Services">サービセズ</a></li>
+                    <li><a href="#" title="Contact">コンタクト</a></li>
                 </div>
-            </section>
+                <div class="search-bar-div">
+                    <input class="search-bar" type="text" placeholder="Search..." class="search-hidden">
+                    <button class="search-bar-btn" type="submit"></button>
+                </div>
+            </ul>
+        </nav>
+        <div class="body-container">
+            <!-- CAROUSEL / BANNER -->
+            <div class="carousel">
+                <button class="carousel-button prev" onclick="changeSlide(-1)">&#x276E;</button>
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <img src="img7.jpg" alt="Slide 1">
+                        <div class="carousel-text1"><h4>どこにいても<br>必要なサービスを提供します。</h4></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img2.jpg" alt="Slide 2">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img1.jpg" alt="Slide 3">
+                        <div class="carousel-text3">世界中のどこにいても<br>人々とつながる</div>
+                    </div>
+                </div>
+                <button class="carousel-button next" onclick="changeSlide(1)">&#x276F;</button>
+                <div class="additional-buttons">
+                    <button class="additional-button" onclick="goToSlide(0)"></button>
+                    <button class="additional-button" onclick="goToSlide(1)"></button>
+                    <button class="additional-button" onclick="goToSlide(2)"></button>
+                </div>
+            </div>
 
-            <section class="div-section">
-                <a class="header-logo-above" href="#" ref="home.html" title="Suguro Tech Solutions Inc.">スグロ</a>
-                <a class="header-logo-below" href="#" ref="home.html" title="Suguro Tech Solutions Inc.">技術ソリューション</a>
+            <!--  -->
 
+            <section>
+                <h3>IMAGE</h3>
+                <p>SUGURO TECH SOLUTIONS</p>
             </section>
 
             <section>
-                <div class="img-container">
-                    <img class="section-img-container" src="PH.png" alt="Image" title="Philippines">
-                </div>
+                <h3>IMAGE</h3>
+                <p>SUGURO TECH SOLUTIONS</p>
             </section>
+            <section>
+                <h3>IMAGE</h3>
+                <p>SUGURO TECH SOLUTIONS</p>
+            </section>
+            <section>
+                <h3>IMAGE</h3>
+                <p>SUGURO TECH SOLUTIONS</p>
+            </section>
+            <section>
+                <h3>IMAGE</h3>
+                <p>SUGURO TECH SOLUTIONS</p>
+            </section>
+            <section>
+                <h3>IMAGE</h3>
+                <p>SUGURO TECH SOLUTIONS</p>
+            </section>
+            <section>
+                <h3>IMAGE</h3>
+                <p>SUGURO TECH SOLUTIONS</p>
+            </section>
+
 
         </div>
-    </header>
-
-    <!-- NAV BAR -->
-    <nav class="second-nav">
-        <ul>
-            <li><a href="#" title="Home">ホーム</a></li>
-            <li><a href="#" title="About">アバウト</a></li>
-            <li><a href="#" title="Services">サービセズ</a></li>
-            <li><a href="#" title="Contact">コンタクト</a></li>
-            <div class="search-bar-div">
-                <input class="search-bar" type="text" placeholder="Search..." class="search-hidden">
-                <button class="search-bar-btn" type="submit"></button>
-            </div>
-        </ul>
-    </nav>
-
-    <!-- CAROUSEL / BANNER -->
-    <section class="carousel-section">
-        <div class="carousel-div">
-            <div class="carousel-div-slider">
-                <img id="img1" src="img1.jpg" class="slide" alt="Image 1">
-                <img id="img2" src="img2.jpg" class="slide" alt="Image 2">
-                <img id="img3" src="img3.jpg" class="slide" alt="Image 3">
-            </div>
-            <div class="slider-nav">
-                <a href="#img1"></a>
-                <a href="#img2"></a>
-                <a href="#img3"></a>
-            </div>
-        </div>
-    </section>
-
-
-    <section>
-        <h3>IMAGE</h3>
-        <p>SUGURO TECH SOLUTIONS</p>
-    </section>
-
-    <section>
-        <h3>IMAGE</h3>
-        <p>SUGURO TECH SOLUTIONS</p>
-    </section>
-    <section>
-        <h3>IMAGE</h3>
-        <p>SUGURO TECH SOLUTIONS</p>
-    </section>
-    <section>
-        <h3>IMAGE</h3>
-        <p>SUGURO TECH SOLUTIONS</p>
-    </section>
-    <section>
-        <h3>IMAGE</h3>
-        <p>SUGURO TECH SOLUTIONS</p>
-    </section>
-    <section>
-        <h3>IMAGE</h3>
-        <p>SUGURO TECH SOLUTIONS</p>
-    </section>
-    <section>
-        <h3>IMAGE</h3>
-        <p>SUGURO TECH SOLUTIONS</p>
-    </section>
-
-
-    <!-- FOOTER! -->
-    <footer>
-        <p>&copy; 2024 Suguro Tech Solutions Inc. All rights reserved.</p>
-    </footer>
+        <!-- FOOTER! -->
+        <footer>
+            <p>&copy; 2024 スグロ株式会社テクノロジーソリューションズ. All rights reserved.</p>
+        </footer>
     </div>
-
 </body>
 
 </html>
