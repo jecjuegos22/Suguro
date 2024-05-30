@@ -1,5 +1,7 @@
 /*-------------------- GENERAL --------------------*/
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -9,16 +11,21 @@ li,
 p {
     margin: 0;
     padding: 0;
-    text-align: center;
-    justify-content: center;
 }
 
 body {
     font-family: Arial, sans-serif;
-    line-height: auto;
     width: 100%;
+    height: 100%;
     padding: 0;
     margin: 0;
+    background-image: url(background-image10.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-clip: rect(300px, 300px, 300px, 300px);
+
 }
 
 header {
@@ -26,10 +33,22 @@ header {
     padding: 0;
     margin: 0;
     text-align: center;
+    opacity: 0.75;
 }
 
 section {
     padding: 10px;
+}
+
+.logo-container {
+    max-width: 200px;
+    max-height: 150px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
 }
 
 footer {
@@ -37,7 +56,36 @@ footer {
     color: #ffffff;
     text-align: center;
     bottom: 0;
-    padding: 10px;
+    padding: 5px;
+}
+
+.footer-rights {
+    width: 100%;
+    /* text-decoration: overline; */
+    border-top: 1px solid #dddddd;
+    justify-content: center;
+    /* justify-content: space-between; */
+    padding: 10px 0px 0px;
+    font-size: 13px;
+}
+
+footer ul {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0px 10px;
+}
+
+footer ul li {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+footer ul i a {
+    color: #ffffff;
 }
 
 /*-------------------- HEADER --------------------*/
@@ -100,69 +148,142 @@ footer {
 
 /*-------------------- NAV BAR --------------------*/
 .second-nav {
-    min-width: 500px;
-    align-items: center;
-    position: relative;
+    /* min-width: 500px; */
+    display: inline-flex;
+    /* align-items: center; */
+    /* position: relative; */
     max-height: auto;
     background-color: #749cc4;
     padding: 8px;
-    text-align: center;
+    /* text-align: center; */
+    line-height: 200%;
     justify-content: space-between;
+    width: 100%;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
 
     a:hover {
-        color: #000;
+        color: #ffffff;
     }
 
 }
+
 
 .second-nav.sticky {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    /* transition: all 0.5s ease-in-out; */
 }
 
 .second-nav ul {
-    display: inline-flex;
-    text-decoration: none;
-    text-align: center;
     justify-content: space-between;
-    padding: 0;
-    margin: 0;
+    display: inline-flex;
 }
 
 .second-nav ul li {
-    display: inline-flex;
-    justify-content: right;
+    display: flex;
+    /* justify-content: right; */
     text-decoration: none;
     text-align: center;
-    justify-content: center;
+    /* justify-content: center; */
     margin-left: 20px;
     margin-right: 20px;
-
+    /* justify-content: space-between; */
+    height: auto;
+    width: auto;
 }
 
 .second-nav ul li a {
-    color: #ffffff;
-    display: inline-block;
-    justify-content: space-between;
+color: #000000;
 }
 
-
-.search-bar-div {
-    display: inline-flex;
+.toggle-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-.search-bar {
-    max-width: 100px;
-}
-
-.search-bar-btn {
-    text-align: right;
-    width: 30px;
+.toggle-button {
+    background-color: #d2d2d2;
+    width: 70px;
+    height: 38px;
+    border-radius: 200px;
     cursor: pointer;
+    position: relative;
+    transition: 0.5s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
+
+.toggle-button::before {
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 200px;
+    margin: 5px;
+    transition: 0.5s ease;
+}
+
+input:checked +.toggle-button {
+    background-color: #749cc4;
+
+}
+
+input:checked+.toggle-button::before {
+    transform: translatex(33px);
+}
+
+.toggle-container input {
+    display: none;
+}
+
+
+.searchbar-container {
+    /* height: 80vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    
+}
+
+.searchbar-box {
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #749cc4;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+.searchbar-box:hover input {
+    width: 150px;
+    
+}
+
+.searchbar-box input {
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 1s;
+    background: transparent;
+}
+
+.searchbar-box a .fas {
+    color: #1daf;
+    font-size: 18px;
+}
+
+
 
 
 /*-------------------- CAROUSEL --------------------*/
@@ -188,7 +309,7 @@ footer {
     flex: 0 0 100%;
     position: relative;
     display: flex;
-    aspect-ratio: 16/6;
+    aspect-ratio: 16/6.1;
     overflow-x: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -259,7 +380,7 @@ footer {
     opacity: 0.75;
 }
 
- /* ORIGINAL CODE */
+/* ORIGINAL CODE */
 /* .carousel-text {
     position: absolute;
     left: 42%;
@@ -289,15 +410,138 @@ footer {
     right: 8%;
 }
 
+/*-------------------- GRID BOX --------------------*/
 
 
+.grid-header-text {
+    text-decoration: underline;
+    font-size: 32px;
+    display: flex;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    /* background-color: #fff; */
+    border-radius: 90px;
+    /* width: 300px; */
+    justify-content: center;
+    text-align: center;
+}
+
+.grid-header-text-below {
+    font-size: 16px;
+    /* background-color: #fff; */
+    border-radius: 90px;
+    /* text-align: center; */
+    text-decoration: underline;
+}
+
+.grid-header-container {
+    /* justify-content: center; */
+    text-align: center;
+    /* display: block; */
+    margin: 50px;
+}
+
+.grid-box {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    max-width: 350px;
+    margin: 30px;
+    
+}
+
+.grid-box-container {
+    display: inline-flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+}
+
+/*-------------------- SLIDING BOX --------------------*/
+
+.slide-box-container {
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    /* display: inline-block; */
+    overflow: hidden;
+}
+
+.slide-box-container1 {
+    height: 350px;
+    width: 100%;
+    display: flex;
+}
+
+.slide-box-container2 {
+    height: 350px;
+    width: 100%;
+    display: flex;
+}
 
 
+.slide-box-container-1,
+.slide-box-container-2,
+.slide-box-container-3,
+.slide-box-container-4 {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    text-align: center;
+    margin: 30px;
+    width: 500px;
+    height: 300px;
+    position: relative; /* Use fixed position for sliding effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: left 1.5s ease, right 1.5s ease, top 1.5s ease, bottom 1.5s ease;
+    
+}
 
+/* Positions for each slide box */
+#slidefirst {
+    left: -530px;
+    top: 0%; /* Upper left */
+}
+
+#slidesecond {
+    right: -1000px;
+    top: 0%; /* Upper right */
+}
+
+#slidethird {
+    left: -530px; /* Start off-screen to the left */
+    bottom: 0%; /* Lower left */
+}
+
+#slidefourth {
+    right: -1000px; /* Start off-screen to the right */
+    bottom: 0%; /* Lower right */
+}
+
+/* Visible state for each slide box */
+#slidefirst.visible {
+    left: 80px; /* Slide into view */
+}
+
+#slidesecond.visible {
+    right: -80px; /* Slide into view */
+}
+
+#slidethird.visible {
+    left: 80px; /* Slide into view */
+}
+
+#slidefourth.visible {
+    right: -80px; /* Slide into view */
+}
 
 
 
 /*-------------------- TRIAL --------------------*/
 
 /*-------------------- TRIAL --------------------*/
-
