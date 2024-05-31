@@ -42,10 +42,10 @@
             </div>
             <ul style="width: 500px;">
 
-                <li><a href="#" title="Home">ホーム</a></li>
-                <li><a href="#" title="About">アバウト</a></li>
-                <li><a href="#" title="Services">サービセズ</a></li>
-                <li><a href="#" title="Contact">コンタクト</a></li>
+                <li><a href="home.html" title="Home">ホーム</a></li>
+                <li><a href="about.html" title="About">アバウト</a></li>
+                <li><a href="services.html" title="Services">サービセズ</a></li>
+                <li><a href="contact.html" title="Contact">コンタクト</a></li>
             </ul>
             <div style="width: 250px;" style="align-items: center; justify-content: center;">
                 <div class="searchbar-container">
@@ -96,10 +96,14 @@
 
             <div class="grid-container">
                 <div class="grid-header-container">
-                    <h1 class="grid-header-text">当社のサービス</h1>
+                    <div style="display: flex; justify-content: center;">
+                        <h1 class="grid-header-text">当社のサービス</h1>
+                    </div>
                     <br>
-                    <div class="grid-header-text-below">
-                        当社は、お客様にさまざまなソフトウェア、設計、情報技術サービスを提供しています。
+                    <div style="display: flex; justify-content: center;">
+                        <div class="grid-header-text-below">
+                            当社は、お客様にさまざまなソフトウェア、設計、情報技術サービスを提供しています。
+                        </div>
                     </div>
                 </div>
 
@@ -115,9 +119,9 @@
                                 <path d="M6 8h.01" />
                                 <path d="M9 8h.01" />
                             </svg>
-                            <h5>
+                            <h4>
                                 ウェブアプリケーション
-                            </h5>
+                            </h4>
                             <p>最新のWebテクノロジーに基づいて構築されたレスポンシブWebアプリケーションを提供することにより、クライアントは任意のデバイスのブラウザーを介して顧客に独自のサービスを拡張できます。
                             </p>
 
@@ -139,9 +143,9 @@
                                 <path d="M15 12v-2" />
                                 <path d="M12 12v-1" />
                             </svg>
-                            <h5>
+                            <h4>
                                 ビジネスソフトウェア
-                            </h5>
+                            </h4>
                             <p>標準的なビジネスプロセス用またはお客様固有のコンピュータソフトウェア。私たちは、お客様のビジネスプロセスを改善、サポート、自動化するための新しい方法をお客様に提供することを目指しています。
                             </p>
 
@@ -157,9 +161,9 @@
                                 <path d="M12 9h.01" />
                                 <path d="M11 12h1v4h1" />
                             </svg>
-                            <h5>
+                            <h4>
                                 情報技術コンサル
-                            </h5>
+                            </h4>
                             <p>当社は、お客様の問題やニーズを明確にし、ソリューションを提供および評価し、選択したソリューションの実装ロードマップを提案することを目指しています。</p>
                         </section>
                     </div>
@@ -169,15 +173,29 @@
 
         <!-- SLIDING BOX! -->
 
+
         <div class="slide-box-main" style="position: relative;">
+            <div style="display: flex; justify-content: center; width: 100%;">
+                <h1 class="slider-header">注目のソフトウェア</h1>
+            </div>
             <div class="slide-box-container">
                 <div class="slide-box-container1">
-                    <img src="img8.jpg" class="slide-box-container-1" id="slidefirst">
-                    <div class="slide-box-container-2" id="slidesecond">this is a box 2</div>
-                </div>    
+                    <img src="img-webdesign.jpg" class="slide-box-container-1" id="slidefirst">
+                    <div class="slide-box-container-2" id="slidesecond">
+                        <div>
+                            <h2>カスタムウェブデザイン<h2>
+                                    <p style="font-size: 16px;">ユーザーを魅了し、ビジネスの成長を促進し、パートナーのミッションを強化する魅力的なカスタムウェブサイト。</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="slide-box-container1">
-                    <div class="slide-box-container-3" id="slidethird">this is a box 3</div>
-                    <img src="img9.jpg" class="slide-box-container-4" id="slidefourth">
+                    <div class="slide-box-container-3" id="slidethird">
+                        <div>
+                            <h2>デジタルマーケティング<h2>
+                                    <p style="font-size: 16px;">オーディエンスを引き付け、ブランドの認知度を高め、目標を達成する戦略的かつ成功志向のマーケティングソリューション。</p>
+                        </div>
+                    </div>
+                    <img src="img-digitalmarketing.jpg" class="slide-box-container-4" id="slidefourth">
                 </div>
             </div>
         </div>
