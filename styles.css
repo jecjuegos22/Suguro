@@ -586,7 +586,13 @@ input:checked+.toggle-button::before {
     justify-content: center; */
 }
 
-
+.about-us-header {
+    display: flex;
+    justify-content: left;
+    margin: 0;
+    padding-top: 100px;
+    width: 500px;
+}
 
 
 
