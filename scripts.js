@@ -1,11 +1,12 @@
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> NAV STICKY
 
-window.onscroll = function() {stickyHeader()};
+
+window.addEventListener('scroll', stickyHeader);
 
 var header = document.querySelector(".second-nav");
-var sticky = header.offsetTop;
 
 function stickyHeader() {
+  var sticky = header.offsetTop; // Recalculate sticky offset each time
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
   } else {
@@ -13,62 +14,9 @@ function stickyHeader() {
   }
 }
 
-
-// window.addEventListener('scroll', stickyHeader);
-
-// var header = document.querySelector(".second-nav");
-// var sticky = header.offsetTop;
-
-// function stickyHeader() {
-//   if (window.pageYOffset > sticky) {
-//     header.classList.add("sticky");
-//   } else {
-//     header.classList.remove("sticky");
-//   }
-// }
-
-// document.addEventListener('DOMContentLoaded', function() {
-//   stickyHeader();
-// });
-
-// window.addEventListener('scroll', stickyHeader);
-// window.addEventListener('resize', updateStickyPosition);
-
-// var header = document.querySelector(".second-nav");
-// var sticky = header.offsetTop;
-
-// function stickyHeader() {
-//   if (window.pageYOffset > sticky) {
-//     header.classList.add("sticky");
-//   } else {
-//     header.classList.remove("sticky");
-//   }
-// }
-
-// function updateStickyPosition() {
-//   sticky = header.offsetTop;
-// }
-
-// // Ensure the sticky class is applied if the page is loaded with a scroll position past the header
-// document.addEventListener('DOMContentLoaded', function() {
-//   updateStickyPosition();
-//   stickyHeader();
-// });
-
-// // Optional: debounce the scroll event for better performance
-// function debounce(func, wait) {
-//   let timeout;
-//   return function(...args) {
-//     const later = () => {
-//       clearTimeout(timeout);
-//       func.apply(this, args);
-//     };
-//     clearTimeout(timeout);
-//     timeout = setTimeout(later, wait);
-//   };
-// }
-
-window.addEventListener('scroll', debounce(stickyHeader, 10));
+document.addEventListener('DOMContentLoaded', function() {
+  stickyHeader();
+});
 
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> CAROUSEL
@@ -95,7 +43,7 @@ function updateCarousel() {
 function startSlideInterval() {
   slideInterval = setInterval(() => {
       changeSlide(1); // Move to the next slide
-  }, 15000); // Interval set to 5000 milliseconds (5 seconds)
+  }, 5000); // Interval set to 5000 milliseconds (5 seconds)
 }
 
 function stopSlideInterval() {
@@ -133,11 +81,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SLIDING
 
-window.addEventListener('scroll', function(e) {
+window.addEventListener('scroll', function() {
     
   const elements = document.querySelectorAll('#slidefirst, #slidesecond');
   const viewportHeight = window.innerHeight;
-  console.log(window.scrollY)
+  // console.log(window.scrollY)
 
   elements.forEach(element => {
       console.log(window.scrollY)
@@ -153,11 +101,11 @@ window.addEventListener('scroll', function() {
   
   const elements = document.querySelectorAll('#slidethird, #slidefourth');
   const viewportHeight = window.innerHeight;
-  console.log(window.scrollY)
+  // console.log(window.scrollY)
 
   elements.forEach(element => {
       console.log(window.scrollY)
-      if (window.scrollY >= 950 && window.scrollY <= 1500) {
+      if (window.scrollY >= 1050 && window.scrollY <= 1700) {
           element.classList.add('visible');
       } else {
           element.classList.remove('visible');
