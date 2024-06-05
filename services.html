@@ -49,8 +49,8 @@
             <div style="width: 250px;" style="align-items: center; justify-content: center;">
                 <div class="searchbar-container">
                     <div class="searchbar-box">
-                        <input type="text" placeholder="Search...">
-                        <a href="#">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <a onclick="search()" href="search_results.html">
                             <!-- <i class="fas fa-search"></i> -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search"
                                 width="30" height="36" viewBox="0 0 24 17" stroke-width="1.5" stroke="#dddddd"
@@ -68,51 +68,62 @@
             <!-- SERVICES PAGE -->
 
             <div class="services-container"><br><br>
-
-                <div style="display: flex; justify-content: center;">
+                <!-- <div style="justify-content: center;"> -->
+                <div class="services-header">
 
                     <h1 title="Services that we offer (Teikyō suru sābisu)">提供するサービス</h1>
 
                 </div>
 
-                <div style="margin: 40px; display: inline-flex; justify-content: center;">
-                    <div>
-                        <h3 style="display: flex; justify-content: center;">ウェブアプリケーション</h3>
-                        <img class="services-img-size" src="img-webapplication.png" alt="Web Application">
-                    </div>
-                    <div class="services-content1"
-                        style="height: 100%; width: 100%;display: block; justify-content: center; align-items: center;">
-                        <p>
-                            最新のWebテクノロジーに基づいて構築されたレスポンシブWebアプリケーションを提供することにより、クライアントは任意のデバイスのブラウザーを介して顧客に独自のサービスを拡張できます。
-                        </p>
-                    </div>
-                </div>
-
-                <div style="margin: 40px; display: inline-flex; justify-content: center;">
-                    <div>
-                        <p>
-                            標準的なビジネスプロセス用またはお客様固有のコンピュータソフトウェア。私たちは、お客様のビジネスプロセスを改善、サポート、自動化するための新しい方法をお客様に提供することを目指しています。
-                        </p>
-                    </div>
-                    <div>
-                        <h3 style="display: flex; justify-content: center;">ビジネスソフトウェア</h3>
-                        <img class="services-img-size" src="img-businesssoftware.png" alt="Business Software">
+                <div class="services-container1">
+                    <div class="services-container1-1">
+                        <div>
+                            <div>
+                                <h3 title="Web Application (Webuapurikēshon)">ウェブアプリケーション</h3>
+                            </div>
+                            <img class="services-img-size" src="img-webapplication.png" alt="Web Application">
+                        </div>
+                        <div class="services-content">
+                            <p title="By providing a responsive web application built on the latest web technology, clients can extend their unique services to customers through any device's browser.">
+                                最新のWebテクノロジーに基づいて構築されたレスポンシブWebアプリケーションを提供することにより、クライアントは任意のデバイスのブラウザーを介して顧客に独自のサービスを拡張できます。
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-
-
-                <div style="margin: 40px; display: inline-flex; justify-content: center;">
-                    <div>
-                        <h3  style="display: flex; justify-content: center;">情報技術コンサル</h3>
-                        <img class="services-img-size" src="img-informationtechcons.png" alt="Info Tech Cons">
-                    </div>
-
-                    <div>
-                        <p>当社は、お客様の問題やニーズを明確にし、ソリューションを提供および評価し、選択したソリューションの実装ロードマップを提案することを目指しています。</p>
+                <div class="services-container1">
+                    <div class="services-container1-1">
+                        <div class="services-content">
+                            <p title="Standard business process or customer-specific computer software. We aim to provide our customers with new ways to improve, support, and automate their business processes.">
+                                標準的なビジネスプロセス用またはお客様固有のコンピュータソフトウェア。私たちは、お客様のビジネスプロセスを改善、サポート、自動化するための新しい方法をお客様に提供することを目指しています。
+                            </p>
+                        </div>
+                        <div>
+                            <div>
+                                <h3 title="Business Software (Bijinesu Sofutowea)">ビジネスソフトウェア</h3>
+                            </div>
+                            <img class="services-img-size" src="img-businesssoftware.png" alt="Business Software">
+                        </div>
                     </div>
                 </div>
 
+
+
+                <div class="services-container1">
+                    <div class="services-container1-1">
+                        <div>
+                            <div>
+                                <h3 title="Information Technology Consulting (Jōhō gijutsu konsaru)">情報技術コンサル</h3>
+                            </div>
+                            <img class="services-img-size" src="img-informationtechcons.png" alt="Info Tech Cons">
+                        </div>
+
+                        <div class="services-content">
+                            <p title="Our goal is to clearly identify our customers' problems and needs, provide and evaluate solutions, and propose an implementation roadmap for the selected solution.">当社は、お客様の問題やニーズを明確にし、ソリューションを提供および評価し、選択したソリューションの実装ロードマップを提案することを目指しています。</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
             </div>
         </div>
     </div>

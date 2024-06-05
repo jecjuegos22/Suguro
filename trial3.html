@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Boxes Sample</title>
-    <link rel="stylesheet" href="styles1.css">
+    <title>Search Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-    <div style="display: flex; justify-content: center; width: 100%;">
-        <h1 class="slider-header">注目のソフトウェア</h1>
+    <div style="width: 250px;" style="align-items: center; justify-content: center;">
+        <div class="searchbar-container">
+            <div class="searchbar-box">
+                <input type="text" id="searchInput" placeholder="Search..." onkeydown="if (event.keyCode === 13) search()">
+                <a onclick="search()" href="search_results.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search"
+                        width="30" height="36" viewBox="0 0 24 17" stroke-width="1.5" stroke="#dddddd"
+                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                        <path d="M21 21l-6 -6" />
+                    </svg>
+                </a>
+            </div>
+        </div>
     </div>
 
-    <script src="scripts1.js"></script>
+    <script src="script1.js"></script>
 </body>
-
 </html>

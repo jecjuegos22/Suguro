@@ -1,9 +1,30 @@
-.slider-header {
-    justify-content: center;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    border: 1px solid #000000;
-    width: 450px;
-    border-radius: 90px;
+body {
+    font-family: Arial, sans-serif;
+}
+
+.search-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
 }
