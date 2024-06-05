@@ -49,8 +49,8 @@
             <div style="width: 250px;" style="align-items: center; justify-content: center;">
                 <div class="searchbar-container">
                     <div class="searchbar-box">
-                        <input type="text" placeholder="Search...">
-                        <a href="#">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <a onclick="search()" href="search_results.html">
                             <!-- <i class="fas fa-search"></i> -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search"
                                 width="30" height="36" viewBox="0 0 24 17" stroke-width="1.5" stroke="#dddddd"
@@ -73,11 +73,18 @@
                     <div class="about-us-container2">
 
                         <img src="img-programming.png" style="width: 500px;">
-                        <div>
-                            <h1 class="about-us-header" title="About Us">アバウト</h1>
-                            <p class="about-us-header1" title="Suguro Tech Solutions aims to provide the best software applications and IT services to support and improve our clients' businesses in the current global technology landscape.">
-                                勝呂テックソリューションズは、現在のグローバルテクノロジーにおいて、お客様のビジネスを支援し改善するために最高のソフトウェアアプリケーションとITサービスを提供することを目指しています。
-                            </p>
+                        <div class="about-us-header-container">
+                            <div>
+                                <!-- <div> -->
+                                <div style="margin-left: 0px;">
+                                    <h1 class="about-us-header" title="About Us">アバウト</h1>
+                                </div>
+                                <p class="about-us-header1"
+                                    title="Suguro Tech Solutions aims to provide the best software applications and IT services to support and improve our clients' businesses in the current global technology landscape.">
+                                    勝呂テックソリューションズは、現在のグローバルテクノロジーにおいて、お客様のビジネスを支援し改善するために最高のソフトウェアアプリケーションとITサービスを提供することを目指しています。
+                                </p>
+                                <!-- </div> -->
+                            </div>
                         </div>
                     </div>
 
@@ -107,13 +114,14 @@
                                 </tr>
                                 <tr>
                                     <td title="Contact Information">連絡先情報</td>
-                                    <td title="TEL: 0283-86-7016 & FAX: 0283-86-7017">TEL: 0283-86-7016<br>FAX: 0283-86-7017</td>
+                                    <td title="TEL: 0283-86-7016 & FAX: 0283-86-7017">TEL: 0283-86-7016<br>FAX:
+                                        0283-86-7017</td>
                                 </tr>
 
                             </table>
                         </div>
                     </div>
-                    <br><br><br>
+                    <br><br><br><br>
                 </div>
             </div>
 
@@ -129,9 +137,8 @@
     <footer>
         <ul>
             <li><a title="Instagram" href="https://www.instagram.com"><svg xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-brand-instagram" width="28" height="28"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
-                        stroke-linejoin="round">
+                        class="icon icon-tabler icon-tabler-brand-instagram" width="28" height="28" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
                         <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
@@ -148,16 +155,14 @@
                     </svg></a></li>
             <li><a title="X(twitter)" href="https://www.twitter.com"><svg xmlns="http://www.w3.org/2000/svg"
                         class="icon icon-tabler icon-tabler-brand-x" width="28" height="28" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
-                        stroke-linejoin="round">
+                        stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
                         <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
                     </svg></a></li>
             <li><a title="Linked In" href="https://www.linkedin.com"><svg xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-brand-linkedin" width="28" height="28"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
-                        stroke-linejoin="round">
+                        class="icon icon-tabler icon-tabler-brand-linkedin" width="28" height="28" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
                         <path d="M8 11l0 5" />
@@ -166,26 +171,24 @@
                         <path d="M16 16v-3a2 2 0 0 0 -4 0" />
                     </svg></a></li>
             <li><a title="Youtube" href="https://www.youtube.com"><svg xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-brand-youtube" width="28" height="28"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
-                        stroke-linejoin="round">
+                        class="icon icon-tabler icon-tabler-brand-youtube" width="28" height="28" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
                         <path d="M10 9l5 3l-5 3z" />
                     </svg></a></li>
             <li><a title="Pinterest" href="https://www.pinterest.com"><svg xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-brand-pinterest" width="28" height="28"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
-                        stroke-linejoin="round">
+                        class="icon icon-tabler icon-tabler-brand-pinterest" width="28" height="28" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path d="M8 20l4 -9" />
-                        <path
-                            d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75 -1.554 3.75 -4a5 5 0 1 0 -9.7 1.7" />
+                        <path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75 -1.554 3.75 -4a5 5 0 1 0 -9.7 1.7" />
                         <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
                     </svg></a></li>
         </ul>
 
-        <p class="footer-rights" title="&copy;2024 Suguro Tech Solutions Inc.">&copy; 2024 スグロ株式会社テクノロジーソリューションズ. All rights reserved.</p>
+        <p class="footer-rights" title="&copy;2024 Suguro Tech Solutions Inc.">&copy; 2024 スグロ株式会社テクノロジーソリューションズ. All
+            rights reserved.</p>
     </footer>
     </div>
 </body>

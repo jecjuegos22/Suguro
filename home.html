@@ -49,8 +49,8 @@
             <div style="width: 250px;" style="align-items: center; justify-content: center;">
                 <div class="searchbar-container">
                     <div class="searchbar-box">
-                        <input type="text" placeholder="Search...">
-                        <a href="#">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <a onclick="search()" href="search_results.html">
                             <!-- <i class="fas fa-search"></i> -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search"
                                 width="30" height="36" viewBox="0 0 24 17" stroke-width="1.5" stroke="#dddddd"
@@ -72,7 +72,7 @@
                     <div class="carousel-slide">
                         <img src="img7.jpg" alt="Slide 1">
                         <div class="carousel-text1">
-                            <h4>どこにいても<br>必要なサービスを提供します。</h4>
+                            <h4 title="We provide the services you need wherever you are .">どこにいても<br>必要なサービスを提供します。</h4>
                         </div>
                     </div>
                     <div class="carousel-slide">
@@ -80,7 +80,7 @@
                     </div>
                     <div class="carousel-slide">
                         <img src="img1.jpg" alt="Slide 3">
-                        <div class="carousel-text3">世界中のどこにいても<br>人々とつながる</div>
+                        <div class="carousel-text3" title="No matter where you are in the world, connect with people.">世界中のどこにいても<br>人々とつながる</div>
                     </div>
                 </div>
                 <button class="carousel-button next" onclick="changeSlide(1)">&#x276F;</button>
