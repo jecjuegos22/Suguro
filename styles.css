@@ -679,6 +679,7 @@ input:checked+.toggle-button::before {
     display: flex;
 }
 
+
 .inquiry-container1 {
     margin: 0;
     padding: 40px;
@@ -807,6 +808,7 @@ input:checked+.toggle-button::before {
     width: 600px;
 }
 
+
 .services-content {
     display: flex;
     align-items: center;
@@ -823,3 +825,4 @@ input:checked+.toggle-button::before {
 }
 
 /*-------------------- TRIAL --------------------*/
+
